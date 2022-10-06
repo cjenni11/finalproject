@@ -13,202 +13,162 @@
         <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
         <link rel="manifest" href="/site.webmanifest">
         <link rel="stylesheet" href="styles.css">
-    <!--FONTS-->
         <link rel="preconnect" href="https://fonts.googleapis.com"> 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
         <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&family=Dancing+Script:wght@400;700&display=swap');
         </style>
-        <!--ADD TWITTER CARD??-->
     </head>
 
     <body>
         <header>
             <h1>Claire Sinagra</h1>
-
- <!--BEGIN HAMBURGER MENU STYLING-->
-
-<nav role="navigation">
-    <div id="menuToggle">
-      <!--
-      A fake / hidden checkbox is used as click reciever,
-      so you can use the :checked selector on it.
-      -->
-      <input type="checkbox" id="checkbox"/>
-      
-      <!--
-      Some spans to act as a hamburger.
-      
-      They are acting like a real hamburger,
-      not that McDonalds stuff.
-      -->
-      <span></span>
-      <span></span>
-      <span></span>
-      
-      <!--
-      Too bad the menu has to be inside of the button
-      but hey, it's pure CSS magic.
-      -->
-      <ul id="menu">
-        <a href="#"><li>Home</li></a>
-        <a href="#About"><li>About</li></a>
-        <a href="#Books"><li>Books</li></a>
-        <a href="#Events"><li>Events</li></a>
-      </ul>
-    </div>
-  </nav>
-
-<!--END HAMBURGER MENU STYLING-->
-           
-            <img src="images/hero.jpg" alt="close up of girl looking at bookshelf" id="About">
+            <a href="#Books" class="skip">Skip to main content</a>
+            <nav id="menuToggle">
+                <input type="checkbox" id="checkbox">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                <ul id="menu">
+                    <a href="#"><li>Home</li></a>
+                    <a href="#About"><li>About</li></a>
+                    <a href="#Books"><li>Books</li></a>
+                    <a href="#Events"><li>Events</li></a>
+                </ul>
+            </nav>   
+            <img 
+                srcset="images/hero_small.png 320w, images/hero_medium.png 480w, images/hero_large.png 640w" 
+                src="images/hero_small.png"
+                alt="close up of girl looking at bookshelf" id="About">
             <h2>About</h2>
-            <img src="images/Claire-Singara.jpg" alt="Claire Sinagra" id="Claire">
+            <img 
+                src="images/Claire-Singara.jpg"
+                alt="Claire Sinagra" 
+                id="Claire">
             <blockquote>Claire lives in the Rocky Mountains with her husband, an exceptionally perfect dog, and an attack cat.</blockquote>
-            <!--<nav>
-                <a href="#About">About</a>
-                <a href="#Books">Books</a>
-                <a href="#Events">Events</a>
-            </nav>-->
         </header>
-
         <main id="Books">
             <h2>Books</h2>
-            <blockquote>Claire’s books have received starred reviews in Publishers Weekly, Library Journal, and Booklist. She is a New York Times and a USA Today bestseller and a RITA® winner.</blockquote>
-            
+            <blockquote>Claire’s books have received starred reviews in Publishers Weekly, Library Journal, and Booklist. She is a New York Times and a USA Today bestseller and a RITA® winner.</blockquote>      
             <figure id="SillySpace">
-                <img src="images/Silly-Space.png" alt="book covers shows four colorful planets stacked on top of each other">
+                <img 
+                    src="images/Silly-Space.png"
+                    alt="book cover shows four colorful planets stacked on top of each other">
                 <h3>Silly Space</h3>
                 <figcaption>The planets were circling the Sun, staring into space, until suddenly they spot something else in their Solar System. What could it be? Who could it be? The planets have no idea but they're circling to find out.</figcaption>
                 <p>2021</p>
             </figure>
-
             <figure id="PrettyPlants">
-                <img src="images/Pretty-Plants.svg" alt="pink book cover with birds in Japanese Cherry blossoms">
+                <img 
+                    srcset="images/Pretty-Plants_small.png 320w, images/Pretty-Plants_medium.png 480w, images/Pretty-Plants_large.png" 
+                    src="images/Pretty-Plants_small.png"
+                    alt="pink book cover with birds in Japanese Cherry blossoms">
                 <h3>Pretty Plants</h3>
                 <figcaption>One tiny dandelion seed wants to hold onto its dandelion home, until the winter wind carries it away. The seed worries it won't be able to find its place in such a vast and frightening world. But everything is much more beautiful than it ever thought, and perhaps finding a new home isn't such a bad thing after all.</figcaption>
                 <p>2020</p>
             </figure>
-
-            <figure is="HappyHello">
-                <img src="images/Happy-Hello.svg" alt="modern artwork on book cover showing three teen friends, two boys and one girl">
+            <figure id="HappyHello">
+                <img srcset="images/Happy-Hello_small.png 320w, images/Happy-Hello_medium.png 480w, images/Happy-Hello_large.png 640w" 
+                src="images/Happy-Hello_small.png"
+                alt="modern artwork on book cover showing three teen friends, two boys and one girl">
                 <h3>Happy Hello</h3>
                 <figcaption>Is it possible to find happiness in times of chaos and confusion?Yes! It is possible!Use these practices and techniques and find happiness each day. A workbook/activity book full of interactive fun!</figcaption>
                 <p>2019</p>
             </figure>
-
             <figure id="FreddysFeelings">
-                <img src="images/Freddys-Feelings.svg" alt="modern artwork on book cover showing a sad teen girl">
+                <img srcset="images/Freddys-Feelings_small.png 320w, images/Freddys-Feelings_medium 480w, images/Freddys-Feelings_large.png 640w" 
+                src="images/Freddys-Feelings_small.png"
+                alt="modern artwork on book cover showing a sad teen girl">
                 <h3>Freddy’s Feelings</h3>
                 <figcaption>How to teach kids about emotions and feelings? Like teaching them everything else - using clear words, familiar situations, exciting pictures and a lot of hands-on activities (games, puzzles, coloring pages, etc.).</figcaption>
                 <p>2018</p>
             </figure>   
         </main>
-
         <article id="Events">
             <h2>Events</h2>
             <blockquote>Get an autographed book at Claire’s bookstore events or hear her read her books at library events.</blockquote>
-
             <section id="SanDiego">
                 <h3>San Diego</h3>
-                <date>Saturday, January 8, 2022</date><br>
-                <time>11:00 AM - 2:00 PM</time>
+                <datetime="2022-01-08T11:00" style="font-family: 'Comfortaa'; font-size: 18px; line-height: 1.5em;">Saturday, January 8, 2022<br>11:00 AM - 2:00 PM</datetime>
                 <p>Bob’s Bookstore</p>
                 <address>
                     123 Bob Street<br>
                     San Diego, CA 89978<br>  
                 </address>
-                <button a href="#">Tickets</button>
+                <a href="#" class="button">Tickets</a>
                 <div class="line"></div>
             </section>
-
             <section id="SantaClara">
                 <h3>Santa Clara</h3>
-                <date>Saturday, January 15, 2022</date><br>
-                <time>1:00 - 4:00 PM</time>
+                <datetime="2022-01-15T13:00" style="font-family: 'Comfortaa'; font-size: 18px; line-height: 1.5em;">Saturday, January 15, 2022<br>1:00 - 4:00 PM</datetime>
                 <p>Barnes & Noble</p>
                 <address>
                     5678 Books Ave.<br>
                     Santa Clara, CA 89813<br>
                 </address>
-                <button a href="#">Tickets</button>
+                <a href="#" class="button">Tickets</a>
                 <div class="line"></div>
             </section>
-
             <section id="SantaBarbara">
                 <h3>Santa Barbara</h3>
-                <date>Saturday, January 21, 2022</date><br>
-                <time>9:00 - 10:30 AM</time>
+                <datetime="2022-01-21T09:00" style="font-family: 'Comfortaa'; font-size: 18px; line-height: 1.5em;">Saturday, January 21, 2022<br>9:00 - 10:30 AM</datetime>
                 <p>Santa Barbara Library</p>
                 <address>
                     286 Main Street<br>
                     Santa Barbara, CA 89173<br>
                 </address>
-                <button a href="#">Tickets</button>
+                <a href="#" class="button">Tickets</a>
                 <div class="line"></div>
             </section>
-
             <section id="SanFrancisco">
                 <h3>San Francisco</h3>
-                <date>Saturday, January 28, 2022</date><br>
-                <time>10:00 - 11:30 AM</time>
+                <datetime="2022-01-28T10:00" style="font-family: 'Comfortaa'; font-size: 18px; line-height: 1.5em;">Saturday, January 28, 2022<br>10:00 - 11:30 AM</datetime>
                 <p>San Francisco Library</p>
                 <address>
                     438 Groovy Blvd.<br>
                     San Francisco, CA 81786<br>
                 </address>
-                <button a href="#">Tickets</button>
+                <a href="#" class="button">Tickets</a>
                 <div class="line" id="last"></div>
             </section>
         </article>
-
         <aside>
             <h2>Newsletter Sign Up</h2>
-            <form>
+            <form action="/action_page.php" method="get">
                 <label for="FirstName">First Name</label>
-                <input type="text" for="FirstName" id="FirstName" autocomplete="given-name" placeholder="First Name">
+                <input type="text" id="FirstName" autocomplete="given-name" placeholder="First Name">
 
                 <label for="LastName">Last Name</label>
-                <input type="text" for="Last Name" id="LastName" autocomplete="family-name" placeholder="Last Name">
+                <input type="text" id="LastName" autocomplete="family-name" placeholder="Last Name">
 
                 <label for="Email">Email Address</label>
-                <input type="text" for="Email" id="Email" autocomplete="email" placeholder="Email Address">
+                <input type="text" id="Email" autocomplete="email" placeholder="Email Address">
 
-                <label for="SignUp">Sign Up</label>
-                <input type="button" for="SignUp" value="Sign Up" id="button">
+                <input type="submit" value="Sign Up" class="button">
             </form>
         </aside>
-
         <footer>
             <h2>Claire Sinagra</h2>
             <small>All books and events are copyright Claire Sinagra, Inc.</small>
-<!--
-            <img src="facebook.svg" alt="Facebook" id="Facebook" />
-            <img src="twitter.svg" alt="Twitter" id="Twitter" />
-            <img src="linkedin.svg" alt="LinkedIn" id="LinkedIn" />
-            <img src="youtube.svg" alt="YouTube" id="YouTube" />
--->         
-
             <div id="SocialMedia">
                 <div class="svg-container">
                     <object type="image/svg+xml" data="samurai.svg" 
-                    width="100%" height="100%" class="svg-content"><?xml version="1.0" ?><svg enable-background="new 0 0 116.3787 194.4198" id="facebook" height="40px" width="40px" viewBox="0 0 116.3787 194.4198" xml:space="preserve"><path d="M97.3535,34.7538h19.0252V0.0214h-34.572C78.924-0.0998,43.7675-0.7718,34.6543,33.9766  c-0.1328,0.3652-3.0432,8.6268-3.0432,27.9316L0,62.0018v36.4296l31.6523-0.0936v96.082H80v-96h32V61.8962H80v-11.492  C80,43.2634,83.0095,34.7538,97.3535,34.7538z M104,69.8962v20.5236H72v96H39.6523V90.3142L8,90.4082v-20.43l31.7343-0.0936  l-0.082-4.0684c-0.414-20.4472,2.5-29.0488,2.6308-29.4588c7.8632-29.9296,37.8908-28.422,39.1796-28.344l26.916,0.008v18.7324  H97.3535C78.66,26.7538,72,38.9706,72,50.4042v19.492H104z"/></svg></object>
+                    width="1" height="1" class="svg-content"><svg enable-background="new 0 0 116.3787 194.4198" id="facebook" height="40px" width="40px" viewBox="0 0 116.3787 194.4198" xml:space="preserve"><path d="M97.3535,34.7538h19.0252V0.0214h-34.572C78.924-0.0998,43.7675-0.7718,34.6543,33.9766  c-0.1328,0.3652-3.0432,8.6268-3.0432,27.9316L0,62.0018v36.4296l31.6523-0.0936v96.082H80v-96h32V61.8962H80v-11.492  C80,43.2634,83.0095,34.7538,97.3535,34.7538z M104,69.8962v20.5236H72v96H39.6523V90.3142L8,90.4082v-20.43l31.7343-0.0936  l-0.082-4.0684c-0.414-20.4472,2.5-29.0488,2.6308-29.4588c7.8632-29.9296,37.8908-28.422,39.1796-28.344l26.916,0.008v18.7324  H97.3535C78.66,26.7538,72,38.9706,72,50.4042v19.492H104z"/></svg></object>
                 </div>
                 <div class="svg-container">
                     <object type="image/svg+xml" data="samurai.svg" 
-                    width="100%" height="100%" class="svg-content"><?xml version="1.0" ?><svg data-name="Twitter" id="Twitter" viewBox="0 0 128 128" height="40px" width="40px"><defs><style>.cls-1{fill:#062b31;}</style></defs><title/><path class="cls-1" d="M86.94,30.66a19.58,19.58,0,0,1,14,6.17s7.64-1.5,11.86-4.47c0,0-1.06,5.88-8.09,10.38h.06c.54,0,4.48-.1,10.68-3,0,0-1.19,3.39-9.3,9.84v0c.49,15.26-7.06,43.47-35,53.51A56.36,56.36,0,0,1,52,106.52,53.69,53.69,0,0,1,22.5,97.85C24,98,25.35,98,26.7,98c16.52,0,24.52-8.48,24.08-8.48h-.61c-14,0-17.41-13.4-17.41-13.4a6.46,6.46,0,0,0,3.73.92,20.4,20.4,0,0,0,5-.73c-15.8-3.74-15.21-18.9-15.21-18.9a13.45,13.45,0,0,0,7.2,2.26,7,7,0,0,0,1.26-.1C20.31,48.15,29,34.52,29,34.52c16.26,18.87,36.25,19.54,39,19.54h.33c-1.48-8.86,2.17-17.37,12-22a15.35,15.35,0,0,1,6.54-1.4M106.2,49.6v0M122,18l-12.93,9.08a23.93,23.93,0,0,1-6.34,2.65,26.16,26.16,0,0,0-15.83-5.54h0a21.69,21.69,0,0,0-9.3,2c-9.18,4.31-14.76,11.75-15.87,20.68A49.25,49.25,0,0,1,33.94,30.28l-5.7-6.61L23.54,31a25.19,25.19,0,0,0-3.4,16.66l-.37,9.53a26.24,26.24,0,0,0,5.69,16.68l1,3.9a26.17,26.17,0,0,0,8.36,12.89,37.24,37.24,0,0,1-8.13.86c-1.19,0-2.42-.05-3.66-.15L.1,89.46l18.55,13.63A60.21,60.21,0,0,0,52,113a63,63,0,0,0,21.38-3.8,57.06,57.06,0,0,0,31.7-27.91,68.92,68.92,0,0,0,7.57-28.65c6.63-5.71,8.45-9.35,8.94-10.74l5.12-14.57-7,3.26L122,18Z"/></svg></object>
+                    width="1" height="1" class="svg-content"><svg data-name="Twitter" id="Twitter" viewBox="0 0 128 128" height="40px" width="40px"><defs><style>.cls-1{fill:#062b31;}</style></defs><title/><path class="cls-1" d="M86.94,30.66a19.58,19.58,0,0,1,14,6.17s7.64-1.5,11.86-4.47c0,0-1.06,5.88-8.09,10.38h.06c.54,0,4.48-.1,10.68-3,0,0-1.19,3.39-9.3,9.84v0c.49,15.26-7.06,43.47-35,53.51A56.36,56.36,0,0,1,52,106.52,53.69,53.69,0,0,1,22.5,97.85C24,98,25.35,98,26.7,98c16.52,0,24.52-8.48,24.08-8.48h-.61c-14,0-17.41-13.4-17.41-13.4a6.46,6.46,0,0,0,3.73.92,20.4,20.4,0,0,0,5-.73c-15.8-3.74-15.21-18.9-15.21-18.9a13.45,13.45,0,0,0,7.2,2.26,7,7,0,0,0,1.26-.1C20.31,48.15,29,34.52,29,34.52c16.26,18.87,36.25,19.54,39,19.54h.33c-1.48-8.86,2.17-17.37,12-22a15.35,15.35,0,0,1,6.54-1.4M106.2,49.6v0M122,18l-12.93,9.08a23.93,23.93,0,0,1-6.34,2.65,26.16,26.16,0,0,0-15.83-5.54h0a21.69,21.69,0,0,0-9.3,2c-9.18,4.31-14.76,11.75-15.87,20.68A49.25,49.25,0,0,1,33.94,30.28l-5.7-6.61L23.54,31a25.19,25.19,0,0,0-3.4,16.66l-.37,9.53a26.24,26.24,0,0,0,5.69,16.68l1,3.9a26.17,26.17,0,0,0,8.36,12.89,37.24,37.24,0,0,1-8.13.86c-1.19,0-2.42-.05-3.66-.15L.1,89.46l18.55,13.63A60.21,60.21,0,0,0,52,113a63,63,0,0,0,21.38-3.8,57.06,57.06,0,0,0,31.7-27.91,68.92,68.92,0,0,0,7.57-28.65c6.63-5.71,8.45-9.35,8.94-10.74l5.12-14.57-7,3.26L122,18Z"/></svg></object>
                 </div>
                 <div class="svg-container">
                     <object type="image/svg+xml" data="samurai.svg" 
-                    width="100%" height="100%" class="svg-content"><svg enable-background="new 0 0 24 24" height="40px" id="LinkedIn" version="1.1" viewBox="0 0 24 24" width="40px" xml:space="preserve"><g id="LinkedIn_1_"><g><path d="M5.8,22.5H1.6c-0.3,0-0.5-0.2-0.5-0.5V8.4c0-0.3,0.2-0.5,0.5-0.5h4.3c0.3,0,0.5,0.2,0.5,0.5V22    C6.3,22.3,6.1,22.5,5.8,22.5z M2.1,21.5h3.3V8.9H2.1V21.5z"/></g><g><path d="M5.8,22.5H1.6c-0.3,0-0.5-0.2-0.5-0.5V8.4c0-0.3,0.2-0.5,0.5-0.5h4.3c0.3,0,0.5,0.2,0.5,0.5V22    C6.3,22.3,6.1,22.5,5.8,22.5z M2.1,21.5h3.3V8.9H2.1V21.5z"/></g><g><path d="M5.8,22.5H1.6c-0.3,0-0.5-0.2-0.5-0.5V8.4c0-0.3,0.2-0.5,0.5-0.5h4.3c0.3,0,0.5,0.2,0.5,0.5V22    C6.3,22.3,6.1,22.5,5.8,22.5z M2.1,21.5h3.3V8.9H2.1V21.5z"/></g><g><path d="M23,22.5h-4.9c-0.3,0-0.5-0.2-0.5-0.5v-5.8c0-1.2-0.3-2.6-1.9-2.6c-1.1,0-1.6,0.7-1.9,1.4c-0.1,0.2-0.1,0.5-0.1,0.8l0,6.3    c0,0.3-0.2,0.5-0.5,0.5H8.5c-0.1,0-0.3-0.1-0.4-0.1S8,22.1,8,22C8,21.9,8,9.5,8,8.4c0-0.1,0-0.3,0.1-0.4C8.2,8,8.3,7.9,8.5,7.9    h4.8c0.3,0,0.5,0.2,0.5,0.5v0.6c0.8-0.7,2.1-1.3,3.8-1.3c3.7,0,5.9,2.6,5.9,6.7V22C23.5,22.3,23.3,22.5,23,22.5z M18.6,21.5h3.9    v-7.1c0-3.5-1.8-5.7-4.9-5.7c-2.3,0-3.6,1.2-3.8,1.9c-0.1,0.2-0.3,0.4-0.6,0.3c-0.2,0-0.4-0.2-0.4-0.5V8.9H9c0,2.3,0,10.4,0,12.6    h3.8l0-5.8c0-0.4,0-0.8,0.1-1.2c0.5-1.3,1.5-2,2.8-2c1.8,0,2.9,1.3,2.9,3.6V21.5z"/></g><g><path d="M23,22.5h-4.9c-0.3,0-0.5-0.2-0.5-0.5v-5.8c0-1.2-0.3-2.6-1.9-2.6c-1.1,0-1.6,0.7-1.9,1.4c-0.1,0.2-0.1,0.5-0.1,0.8l0,6.3    c0,0.3-0.2,0.5-0.5,0.5H8.5c-0.1,0-0.3-0.1-0.4-0.1S8,22.1,8,22C8,21.9,8,9.5,8,8.4c0-0.1,0-0.3,0.1-0.4C8.2,8,8.3,7.9,8.5,7.9    h4.8c0.3,0,0.5,0.2,0.5,0.5v0.6c0.8-0.7,2.1-1.3,3.8-1.3c3.7,0,5.9,2.6,5.9,6.7V22C23.5,22.3,23.3,22.5,23,22.5z M18.6,21.5h3.9    v-7.1c0-3.5-1.8-5.7-4.9-5.7c-2.3,0-3.6,1.2-3.8,1.9c-0.1,0.2-0.3,0.4-0.6,0.3c-0.2,0-0.4-0.2-0.4-0.5V8.9H9c0,2.3,0,10.4,0,12.6    h3.8l0-5.8c0-0.4,0-0.8,0.1-1.2c0.5-1.3,1.5-2,2.8-2c1.8,0,2.9,1.3,2.9,3.6V21.5z"/></g><g><path d="M3.6,7.2L3.6,7.2C1.8,7.2,0.5,6,0.5,4.4c0-1.7,1.3-2.9,3.1-2.9c1.8,0,3,1.2,3.1,2.8C6.7,6,5.4,7.2,3.6,7.2z M3.6,2.5    c-1.3,0-2.1,0.7-2.1,1.9c0,1.1,0.8,1.9,2.1,1.9h0c1.3,0,2.1-0.7,2.1-1.9C5.7,3.2,4.9,2.5,3.6,2.5z"/></g></g></svg></object>
+                    width="1" height="1" class="svg-content"><svg enable-background="new 0 0 24 24" height="40px" id="LinkedIn" version="1.1" viewBox="0 0 24 24" width="40px" xml:space="preserve"><g id="LinkedIn_1_"><g><path d="M5.8,22.5H1.6c-0.3,0-0.5-0.2-0.5-0.5V8.4c0-0.3,0.2-0.5,0.5-0.5h4.3c0.3,0,0.5,0.2,0.5,0.5V22    C6.3,22.3,6.1,22.5,5.8,22.5z M2.1,21.5h3.3V8.9H2.1V21.5z"/></g><g><path d="M5.8,22.5H1.6c-0.3,0-0.5-0.2-0.5-0.5V8.4c0-0.3,0.2-0.5,0.5-0.5h4.3c0.3,0,0.5,0.2,0.5,0.5V22    C6.3,22.3,6.1,22.5,5.8,22.5z M2.1,21.5h3.3V8.9H2.1V21.5z"/></g><g><path d="M5.8,22.5H1.6c-0.3,0-0.5-0.2-0.5-0.5V8.4c0-0.3,0.2-0.5,0.5-0.5h4.3c0.3,0,0.5,0.2,0.5,0.5V22    C6.3,22.3,6.1,22.5,5.8,22.5z M2.1,21.5h3.3V8.9H2.1V21.5z"/></g><g><path d="M23,22.5h-4.9c-0.3,0-0.5-0.2-0.5-0.5v-5.8c0-1.2-0.3-2.6-1.9-2.6c-1.1,0-1.6,0.7-1.9,1.4c-0.1,0.2-0.1,0.5-0.1,0.8l0,6.3    c0,0.3-0.2,0.5-0.5,0.5H8.5c-0.1,0-0.3-0.1-0.4-0.1S8,22.1,8,22C8,21.9,8,9.5,8,8.4c0-0.1,0-0.3,0.1-0.4C8.2,8,8.3,7.9,8.5,7.9    h4.8c0.3,0,0.5,0.2,0.5,0.5v0.6c0.8-0.7,2.1-1.3,3.8-1.3c3.7,0,5.9,2.6,5.9,6.7V22C23.5,22.3,23.3,22.5,23,22.5z M18.6,21.5h3.9    v-7.1c0-3.5-1.8-5.7-4.9-5.7c-2.3,0-3.6,1.2-3.8,1.9c-0.1,0.2-0.3,0.4-0.6,0.3c-0.2,0-0.4-0.2-0.4-0.5V8.9H9c0,2.3,0,10.4,0,12.6    h3.8l0-5.8c0-0.4,0-0.8,0.1-1.2c0.5-1.3,1.5-2,2.8-2c1.8,0,2.9,1.3,2.9,3.6V21.5z"/></g><g><path d="M23,22.5h-4.9c-0.3,0-0.5-0.2-0.5-0.5v-5.8c0-1.2-0.3-2.6-1.9-2.6c-1.1,0-1.6,0.7-1.9,1.4c-0.1,0.2-0.1,0.5-0.1,0.8l0,6.3    c0,0.3-0.2,0.5-0.5,0.5H8.5c-0.1,0-0.3-0.1-0.4-0.1S8,22.1,8,22C8,21.9,8,9.5,8,8.4c0-0.1,0-0.3,0.1-0.4C8.2,8,8.3,7.9,8.5,7.9    h4.8c0.3,0,0.5,0.2,0.5,0.5v0.6c0.8-0.7,2.1-1.3,3.8-1.3c3.7,0,5.9,2.6,5.9,6.7V22C23.5,22.3,23.3,22.5,23,22.5z M18.6,21.5h3.9    v-7.1c0-3.5-1.8-5.7-4.9-5.7c-2.3,0-3.6,1.2-3.8,1.9c-0.1,0.2-0.3,0.4-0.6,0.3c-0.2,0-0.4-0.2-0.4-0.5V8.9H9c0,2.3,0,10.4,0,12.6    h3.8l0-5.8c0-0.4,0-0.8,0.1-1.2c0.5-1.3,1.5-2,2.8-2c1.8,0,2.9,1.3,2.9,3.6V21.5z"/></g><g><path d="M3.6,7.2L3.6,7.2C1.8,7.2,0.5,6,0.5,4.4c0-1.7,1.3-2.9,3.1-2.9c1.8,0,3,1.2,3.1,2.8C6.7,6,5.4,7.2,3.6,7.2z M3.6,2.5    c-1.3,0-2.1,0.7-2.1,1.9c0,1.1,0.8,1.9,2.1,1.9h0c1.3,0,2.1-0.7,2.1-1.9C5.7,3.2,4.9,2.5,3.6,2.5z"/></g></g></svg></object>
                 </div>
                 <div class="svg-container">
                     <object type="image/svg+xml" data="samurai.svg" 
-                    width="100%" height="100%" class="svg-content"><?xml version="1.0" ?><svg viewBox="0 0 32 32" height="40px" width="40px"><title/><g data-name="youtube youtuber video play" id="YouTube"><path d="M30,12a5.71,5.71,0,0,0-5.31-5.7C18.92,6,13.06,6,7.33,6.28,4.51,6.28,2,9,2,12a43.69,43.69,0,0,0,0,8.72,5.32,5.32,0,0,0,5.28,5.33h0q4.35.24,8.72.24t8.67-.23A5.34,5.34,0,0,0,30,20.8,31.67,31.67,0,0,0,30,12Zm-2,8.63a.49.49,0,0,0,0,.12,3.36,3.36,0,0,1-3.39,3.34,166,166,0,0,1-17.28,0A3.36,3.36,0,0,1,4,20.65a42,42,0,0,1,0-8.47.45.45,0,0,0,0-.11A3.78,3.78,0,0,1,7.38,8.28c2.86-.13,5.74-.19,8.62-.19s5.76.06,8.62.19h.05c1.71,0,3.33,1.84,3.33,3.79a.76.76,0,0,0,0,.15A30.11,30.11,0,0,1,28,20.61Z"/><path d="M20.79,15.51l-7.14-3.68a1,1,0,1,0-.92,1.78l5.43,2.79-4,2.07V16.4a1,1,0,0,0-2,0v3.72a1,1,0,0,0,1,1,1,1,0,0,0,.46-.11l7.14-3.72a1,1,0,0,0,.54-.89A1,1,0,0,0,20.79,15.51Z"/></g></svg></object>
+                    width="1" height="1" class="svg-content"><svg viewBox="0 0 32 32" height="40px" width="40px"><title/><g data-name="youtube youtuber video play" id="YouTube"><path d="M30,12a5.71,5.71,0,0,0-5.31-5.7C18.92,6,13.06,6,7.33,6.28,4.51,6.28,2,9,2,12a43.69,43.69,0,0,0,0,8.72,5.32,5.32,0,0,0,5.28,5.33h0q4.35.24,8.72.24t8.67-.23A5.34,5.34,0,0,0,30,20.8,31.67,31.67,0,0,0,30,12Zm-2,8.63a.49.49,0,0,0,0,.12,3.36,3.36,0,0,1-3.39,3.34,166,166,0,0,1-17.28,0A3.36,3.36,0,0,1,4,20.65a42,42,0,0,1,0-8.47.45.45,0,0,0,0-.11A3.78,3.78,0,0,1,7.38,8.28c2.86-.13,5.74-.19,8.62-.19s5.76.06,8.62.19h.05c1.71,0,3.33,1.84,3.33,3.79a.76.76,0,0,0,0,.15A30.11,30.11,0,0,1,28,20.61Z"/><path d="M20.79,15.51l-7.14-3.68a1,1,0,1,0-.92,1.78l5.43,2.79-4,2.07V16.4a1,1,0,0,0-2,0v3.72a1,1,0,0,0,1,1,1,1,0,0,0,.46-.11l7.14-3.72a1,1,0,0,0,.54-.89A1,1,0,0,0,20.79,15.51Z"/></g></svg></object>
                 </div>
             </div>
-
             <table>
                 <caption>Claire’s best selling books and upcoming events.</caption>
                 <tr>
@@ -232,13 +192,12 @@
                     <td><a href="#SanFrancisco">Jan 28 | San Francisco</a></td>
                 </tr>
             </table>
-
             <section>
+                <h3>Privacy & Terms</h3>
                 <a href="#">Privacy Policy</a>
                 <a href="#">Terms of Service</a>
-                <small>&copy;2020 Claire Sinagra. All rights reserved.</small>
+                <small>&copy;2020 Claire Sinagra. <br>All rights reserved.</small>
             </section>
         </footer>
-
     </body>
 </html>

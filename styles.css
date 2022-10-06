@@ -147,7 +147,7 @@ blockquote {
 figure img {
 	width: 300px;
 	border-width: 15px;
-	margin: auto;
+	margin: auto;  
 	display: block;
 	padding: 25px 0px;
 }
@@ -396,6 +396,7 @@ footer section a {
 }
 footer section a:hover {
 	color: var(--teal);
+	background-color: none;
 }
 footer section a:visited {
 	background-color: none;
@@ -1017,6 +1018,9 @@ footer h3 {
 	}
 	footer section a:hover {
 		color: var(--apple)
+	}
+	footer section a:visited {
+		color: var(--black);
 	}
 }
 /*END STYLES FOR LARGE SCREENS*/
